@@ -7,7 +7,11 @@
   </p>
 </section>
 
-<section *ngIf="films$ | async as films" class="films-list" aria-label="Star Wars films">
+<section
+  *ngIf="films$ | async as films"
+  class="films-list"
+  aria-label="Star Wars films"
+>
   <a
     *ngFor="let film of films; trackBy: trackByEpisodeId"
     class="film-card"
@@ -15,6 +19,6 @@
   >
     <span class="film-card__episode">Episode {{ film.episode_id }}</span>
     <strong>{{ film.title }}</strong>
-    <small>{{ film.release_date | date: 'yyyy' }} • {{ film.director }}</small>
+    <small>{{ film.release_date | date: "yyyy" }} • {{ film.director }}</small>
   </a>
 </section>

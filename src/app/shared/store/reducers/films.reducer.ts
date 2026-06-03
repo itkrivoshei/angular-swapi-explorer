@@ -1,6 +1,6 @@
-import { createReducer, on } from '@ngrx/store';
-import * as DataActions from '../actions/actions';
-import { FilmsState, initialFilmsState } from '../state';
+import { createReducer, on } from "@ngrx/store";
+import * as DataActions from "../actions/actions";
+import { FilmsState, initialFilmsState } from "../state";
 
 export const filmsReducer = createReducer<FilmsState>(
   initialFilmsState,
@@ -11,5 +11,5 @@ export const filmsReducer = createReducer<FilmsState>(
   }),
   on(DataActions.loadDataFailure, (state, { error }) => {
     return { ...state, error };
-  })
+  }),
 );

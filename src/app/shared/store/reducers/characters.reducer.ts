@@ -1,6 +1,6 @@
-import { createReducer, on } from '@ngrx/store';
-import * as DataActions from '../actions/actions';
-import { initialCharactersState } from '../state';
+import { createReducer, on } from "@ngrx/store";
+import * as DataActions from "../actions/actions";
+import { initialCharactersState } from "../state";
 
 export const charactersReducer = createReducer(
   initialCharactersState,
@@ -17,5 +17,5 @@ export const charactersReducer = createReducer(
   on(DataActions.loadDataFailure, (state, { error }) => ({
     ...state,
     error,
-  }))
+  })),
 );
