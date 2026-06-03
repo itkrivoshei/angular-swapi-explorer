@@ -1,5 +1,5 @@
-import { Character } from '../../core/models/character.model';
-import { Film } from '../../core/models/film.model';
+import { Character } from "../../core/models/character.model";
+import { Film } from "../../core/models/film.model";
 
 export interface AppState {
   characters: CharactersState;

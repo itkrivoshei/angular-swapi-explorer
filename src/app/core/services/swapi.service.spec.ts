@@ -1,8 +1,8 @@
-import { TestBed } from '@angular/core/testing';
-import { HttpClientTestingModule } from '@angular/common/http/testing';
-import { SwapiService } from './swapi.service';
+import { TestBed } from "@angular/core/testing";
+import { HttpClientTestingModule } from "@angular/common/http/testing";
+import { SwapiService } from "./swapi.service";
 
-describe('SwapiService', () => {
+describe("SwapiService", () => {
   let service: SwapiService;
 
   beforeEach(() => {
@@ -13,7 +13,7 @@ describe('SwapiService', () => {
     service = TestBed.inject(SwapiService);
   });
 
-  it('should be created', () => {
+  it("should be created", () => {
     expect(service).toBeTruthy();
   });
 });

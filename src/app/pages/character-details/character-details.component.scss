@@ -86,7 +86,9 @@
     background: rgba(250, 204, 21, 0.08);
     color: #fde68a;
     text-decoration: none;
-    transition: transform 160ms ease, border-color 160ms ease;
+    transition:
+      transform 160ms ease,
+      border-color 160ms ease;
 
     &:hover {
       transform: translateY(-2px);

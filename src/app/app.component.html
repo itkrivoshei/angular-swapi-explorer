@@ -20,7 +20,9 @@
       [attr.aria-pressed]="isPlaying"
       [title]="isPlaying ? 'Stop theme music' : 'Play theme music'"
     >
-      <mat-icon aria-hidden="true">{{ isPlaying ? 'volume_up' : 'volume_off' }}</mat-icon>
+      <mat-icon aria-hidden="true">{{
+        isPlaying ? "volume_up" : "volume_off"
+      }}</mat-icon>
     </button>
   </header>
 

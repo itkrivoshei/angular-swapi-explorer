@@ -74,7 +74,10 @@
   background: rgba(250, 204, 21, 0.1);
   color: #fde68a;
   text-decoration: none;
-  transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    background 160ms ease;
 }
 
 .app-nav a {
